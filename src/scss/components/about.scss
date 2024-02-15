@@ -1,0 +1,8 @@
+@use '../util/' as *;
+
+img{
+  border: 1px solid transparent;
+  background: var(--pink);
+  border-radius: 30%;
+  width: rem(600);
+}

@@ -6,14 +6,16 @@ const Navbar = () => {
       </div>
 
       <div className="links">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Hire Me</li>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li className="hire">Hire Me</li>
+        </ul>
       </div>
 
     </nav> 
-   );
+  );
 }
  
 export default Navbar;
