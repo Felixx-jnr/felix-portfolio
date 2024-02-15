@@ -1,8 +1,36 @@
 @use '../util/' as *;
+.about{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(30);
+  align-content: center;
+  text-align: center;
+  
+
+  &__description{
+    align-self: center;
+    text-align: center;
+
+  
+    &--header{
+      text-transform: uppercase;
+      font-size: rem(50);
+      color: var(--pink);
+    }
+
+    &--writeup{
+      text-align: justify;
+      color: var(--pink);
+      font-size: large;
+    }
+  }
+
+}
 
 img{
   border: 1px solid transparent;
-  background: var(--pink);
-  border-radius: 30%;
-  width: rem(600);
+  border-radius: 50%;
+  width: 80%;
 }
+
+

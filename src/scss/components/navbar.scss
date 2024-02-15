@@ -10,10 +10,23 @@
 }
 
 header{
+  width: 100%;
+  display: flex;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-left:rem(30) ;
   text-transform: uppercase;
   font-size: rem(40);
+  flex-wrap: nowrap;
+
+  @include breakpoint-down(medium){
+    font-size:  rem(30);
+  }
+
+  @include breakpoint-down(small){
+    font-size: rem(10);
+  }
+
+ 
 }
 
 .links ul{
@@ -22,9 +35,17 @@ header{
 }
 
 .links li{
-  margin: 0 rem(20);
+  margin: 0 rem(10);
   padding: rem(10) rem(10);
   font-weight:bold;
+
+  @include breakpoint(medium){
+    margin:  rem(15);
+  }
+
+  @include breakpoint(large){
+    margin: rem(20);
+  }
 }
 
 .hire{
