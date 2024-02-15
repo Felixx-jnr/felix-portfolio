@@ -2,54 +2,49 @@
 
 .navbar{
   padding: rem(5);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  justify-content: space-between;
   align-content: center;
-  color: var(--pink);
 }
 
 header{
   width: 100%;
   display: flex;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left:rem(30) ;
   text-transform: uppercase;
   font-size: rem(40);
   flex-wrap: nowrap;
 
   @include breakpoint-down(medium){
-    font-size:  rem(30);
+    font-size:  rem(35);
   }
 
   @include breakpoint-down(small){
-    font-size: rem(10);
+    font-size: rem(25);
   }
-
- 
 }
 
-.links ul{
+ul{
   display: flex;
   list-style: none;
 }
 
-.links li{
-  margin: 0 rem(10);
-  padding: rem(10) rem(10);
-  font-weight:bold;
+// .links li{
+//   margin: 0 rem(10);
+//   padding: rem(10) rem(10);
+//   font-weight:bold;
 
-  @include breakpoint(medium){
-    margin:  rem(15);
-  }
+//   @include breakpoint(medium){
+//     margin:  rem(15);
+//   }
 
-  @include breakpoint(large){
-    margin: rem(20);
-  }
-}
+//   @include breakpoint(large){
+//     margin: rem(20);
+//   }
+// }
 
-.hire{
-  background: #290a6c;
-  border: 1px solid var(navyblue);
-  border-radius: rem(10);
-}
+// .hire{
+//   background: #290a6c;
+//   border: 1px solid var(navyblue);
+//   border-radius: rem(10);
+// }
