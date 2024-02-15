@@ -1,0 +1,24 @@
+@use '../util/' as *;
+.home{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(10);
+  align-items: center;
+  text-align: center;
+  margin-top: rem(100);
+
+  &__description{
+    font-size: rem(45);
+    font-weight: bolder;
+    text-align: left;
+    margin-left: rem(50);
+  }
+}
+
+img{
+  border: 5px solid red;
+  border-radius: 50%;
+  width: 70%;
+}
+
+

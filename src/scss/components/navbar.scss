@@ -15,9 +15,8 @@ header{
   font-weight: bold;
   text-transform: uppercase;
   
-
   @include breakpoint-down(medium){
-    font-size:  rem(35);
+    font-size: rem(35);
   }
 
   @include breakpoint-down(small){
@@ -40,7 +39,6 @@ ul{
 }
 
 .icons li{
-
   padding-left:rem(20) ;
 }
 
