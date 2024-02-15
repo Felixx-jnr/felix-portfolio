@@ -1,19 +1,20 @@
 @use '../util' as *;
 
 .navbar{
-  padding: rem(5);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  align-content: center;
 }
 
 header{
   width: 100%;
+  padding-left: rem(10);
   display: flex;
-  text-transform: uppercase;
-  font-size: rem(40);
   flex-wrap: nowrap;
+  font-size: rem(40);
+  font-weight: bold;
+  text-transform: uppercase;
+  
 
   @include breakpoint-down(medium){
     font-size:  rem(35);
@@ -27,24 +28,19 @@ header{
 ul{
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
-// .links li{
-//   margin: 0 rem(10);
-//   padding: rem(10) rem(10);
-//   font-weight:bold;
+.pages{
+  justify-content: space-around;
+}
 
-//   @include breakpoint(medium){
-//     margin:  rem(15);
-//   }
+.icons{
+  justify-content: center;
+}
 
-//   @include breakpoint(large){
-//     margin: rem(20);
-//   }
-// }
+.icons li{
 
-// .hire{
-//   background: #290a6c;
-//   border: 1px solid var(navyblue);
-//   border-radius: rem(10);
-// }
+  padding-left:rem(20) ;
+}
+
