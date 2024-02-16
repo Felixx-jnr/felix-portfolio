@@ -1,0 +1,42 @@
+@use '../util/' as *;
+
+.about{
+
+  &__header{
+    font-size: rem(40);
+    text-align: center;
+    margin-top: rem(80);
+    margin-bottom: rem(0);
+  }
+
+  &__info{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: rem(10);
+    align-items: center;
+    justify-items: center;
+
+    &--image{
+      width: 60%;
+    }
+
+    &--writeup{
+      padding: rem(30);
+      text-align: justify;
+    }
+
+    &--writeup h2{
+      margin: 0;
+      font-size: rem(40);
+    }
+
+    &--writeup p{
+      margin: 0;
+      font-size: rem(25);
+      
+    }
+  }
+
+
+
+}

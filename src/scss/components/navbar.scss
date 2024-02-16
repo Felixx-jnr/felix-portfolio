@@ -16,11 +16,11 @@ header{
   text-transform: uppercase;
   
   @include breakpoint-down(medium){
-    font-size: rem(35);
+    font-size: rem(30);
   }
 
   @include breakpoint-down(small){
-    font-size: rem(25);
+    font-size: rem(20);
   }
 }
 
@@ -30,7 +30,8 @@ ul{
 }
 
 .pages{
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-left: 0;
 }
 
 .pages li{

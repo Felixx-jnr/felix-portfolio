@@ -1,13 +1,14 @@
-
+import About from "./components/About";
 import Navbar from "./components/Navbar";
-import Two from "./components/Two";
+import Home from "./components/Home";
 
 
 function App() {
   return (
     <div className="App container">
       <Navbar/>
-      <Two/>
+      <Home/>
+      <About/>
 
     </div>
 
