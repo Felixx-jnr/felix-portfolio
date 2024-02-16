@@ -12,7 +12,7 @@ const Navbar = () => {
       <ul className="links pages">
         <li>Home</li>
         <li>About</li>
-        <li>Stacks</li>
+        <li>Skills</li>
         <li>Projects</li>
         <li>Contact</li>
       </ul>
