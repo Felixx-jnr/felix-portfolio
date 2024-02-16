@@ -9,4 +9,15 @@
     margin-bottom: rem(0);
   }
 
+  &__info{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: rem(10);
+    align-items: center;
+    justify-items: center;
+
+    &--image{
+      width: 60%;
+    }
+  }
 }
