@@ -7,12 +7,12 @@
 }
 
 header{
-  width: 100%;
-  padding-left: rem(10);
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
   font-size: rem(40);
   font-weight: bold;
+  padding-left: rem(10);
   text-transform: uppercase;
   
   @include breakpoint-down(medium){
@@ -27,18 +27,23 @@ header{
 ul{
   display: flex;
   list-style: none;
-  padding: 0;
 }
 
 .pages{
   justify-content: space-around;
 }
 
+.pages li{
+  padding: rem(5) rem(15);
+  font-size: rem(20);
+  font-weight: 800;
+}
+
 .icons{
   justify-content: center;
+  font-size: rem(25);
 }
 
 .icons li{
   padding-left:rem(20) ;
 }
-

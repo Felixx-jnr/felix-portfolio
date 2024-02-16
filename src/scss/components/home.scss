@@ -1,24 +1,27 @@
 @use '../util/' as *;
+
 .home{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: rem(10);
   align-items: center;
-  text-align: center;
   margin-top: rem(100);
+
 
   &__description{
     font-size: rem(45);
     font-weight: bolder;
-    text-align: left;
-    margin-left: rem(50);
+    max-width: inherit;
+    margin: 0 auto;
   }
 }
 
-img{
-  border: 5px solid red;
-  border-radius: 50%;
-  width: 70%;
-}
+// img{
+//   display: block;
+//   width: 70%;
+//   margin: 0 auto ;
+//   border: 5px solid transparent;
+//   border-radius: 50%;
+// }
 
 

@@ -1,3 +1,6 @@
+import { faFacebook, faGithub, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Navbar = () => {
   return ( 
     <nav className="navbar">
@@ -15,9 +18,10 @@ const Navbar = () => {
       </ul>
   
       <ul className="links icons">
-        <li>git</li>
-        <li>Twitter</li>
-        <li>Linkedn</li>
+        <li><FontAwesomeIcon icon={faGithub} /></li>
+        <li><FontAwesomeIcon icon={faXTwitter} /></li>
+        <li><FontAwesomeIcon icon={faLinkedinIn} /></li>
+        <li><FontAwesomeIcon icon={faFacebook} /></li>
       </ul>
     
     </nav> 
