@@ -6,18 +6,42 @@
     font-size: rem(40);
     text-align: center;
     margin-top: rem(80);
-    margin-bottom: rem(0);
+    margin-bottom: rem(30);
   }
 
   &__info{
     display: grid;
-    grid-template-columns: 1fr 0.7fr;
-    gap: rem(10);
+    grid-template-columns: 1fr 1fr;
+    gap: rem(80);
     align-items: center;
-    justify-items: center;
 
     &--image{
-      width: 60%;
+      justify-self: right;
+      width: 80%;
+    }
+
+    &--writeup{
+      padding: rem(30) 0;
+      text-align: left;
+    }
+
+    &--writeup h2{
+      margin: 0;
+      font-size: rem(40);
+    }
+
+    &--writeup p{
+      margin: 0;
+      font-size: rem(25);
+    }
+
+    &--logos div{
+      font-size: rem(25);
+      margin: rem(20);
+    }
+
+    &--logos span{
+      margin-left: rem(20);
     }
   }
 }

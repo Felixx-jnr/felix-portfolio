@@ -10,3 +10,7 @@ Motio framer (Dust particles)
 Slider
 
 Projects
+
+Make contact details links
+
+Lighting effect
