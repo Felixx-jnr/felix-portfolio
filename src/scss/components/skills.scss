@@ -1,10 +1,6 @@
 @use '../util/' as *;
 
 .skills{
-  position: relative;
-  overflow: hidden;
-  background: rgba(128, 128, 128, 0.2);
-
   &__header{
   
     font-size: rem(40);
@@ -23,26 +19,18 @@
   }
 }
 
-.blob{
-  filter: blur(rem(40));
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: rem(250);
-  height: rem(250);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
+.card{
+  margin: rem((5));
+  width: rem(150);
+  background: #333;
+  border: 1px solid #666;
+  border-radius: rem(20);
+  padding: rem(20);
 }
 
-.fakeblob{
-  display: hidden;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: rem(200);
-  height: rem(200);
-  border-radius: 50%;
+li{
+  text-align: center;
 }
+
+
 
