@@ -29,7 +29,12 @@
 }
 
 li{
+  position: relative;
   text-align: center;
+}
+
+li:hover{
+  top: -10px;
 }
 
 
