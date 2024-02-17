@@ -1,0 +1,48 @@
+@use '../util/' as *;
+
+.skills{
+  position: relative;
+  overflow: hidden;
+  background: rgba(128, 128, 128, 0.2);
+
+  &__header{
+  
+    font-size: rem(40);
+    text-align: center;
+    margin-top: rem(80);
+    margin-bottom: rem(30);
+  }
+
+  &__icon{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-size: rem(80);
+    list-style: none;
+    padding: rem(10);
+  }
+}
+
+.blob{
+  filter: blur(rem(40));
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: rem(250);
+  height: rem(250);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.fakeblob{
+  display: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: rem(200);
+  height: rem(200);
+  border-radius: 50%;
+}
+
