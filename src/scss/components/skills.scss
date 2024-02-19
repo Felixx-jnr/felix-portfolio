@@ -11,7 +11,7 @@
 
   &__icon{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     font-size: rem(80);
     list-style: none;
@@ -19,23 +19,37 @@
   }
 }
 
+.card img{
+  filter: grayscale(100%);
+}
+
+.card img:hover{
+  filter: grayscale(0);
+}
+
 .card{
   margin: rem((5));
+  padding: rem(10) rem(30) rem(0);
   width: rem(150);
   background: #333;
   border: 1px solid #666;
   border-radius: rem(20);
-  padding: rem(20);
 }
 
-li{
-  position: relative;
-  text-align: center;
+img{
+  transition: transform 1s ease-in-out;
 }
 
-li:hover{
-  top: -10px;
+img:hover{
+  transform:rotateY(360deg);
 }
+
+
+
+
+
+
+
 
 
 

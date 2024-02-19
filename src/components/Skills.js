@@ -1,5 +1,12 @@
-import { faCss3, faHtml5, faJs, faNodeJs, faReact, faSass } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import html from '../assets/html.svg'
+import css from '../assets/css.svg'
+import js from '../assets/js.svg'
+import react from '../assets/react.svg'
+import sass from '../assets/sass.svg'
+import node from '../assets/node.svg'
+import express from '../assets/express.svg'
+import mongo from '../assets/mongodb.svg'
+
 
 const Skills = () => {
 
@@ -10,12 +17,15 @@ const Skills = () => {
       <h1 className='skills__header'>SKILLS</h1>
 
       <div className="skills__icon">
-        <li className='card'><FontAwesomeIcon icon={faHtml5} /></li>
-        <li className='card'><FontAwesomeIcon icon={faCss3} /></li>
-        <li className='card'><FontAwesomeIcon icon={faJs} /></li>
-        <li className='card'><FontAwesomeIcon icon={faReact} /></li>
-        <li className='card'><FontAwesomeIcon icon={faNodeJs} /></li>
-        <li className='card'><FontAwesomeIcon icon={faSass} /></li>
+        <li className='card'><img src={html} alt="" /></li>
+        <li className='card'><img src={css} alt="" /></li>
+        <li className='card'><img src={js} alt="" /></li>
+        <li className='card'><img src={react} alt="" /></li>
+        <li className='card'><img src={sass} alt="" /></li>
+        <li className='card'><img src={node} alt="" /></li>
+        <li className='card'><img src={express} alt="" /></li>
+        <li className='card'><img src={mongo} alt="" /></li>
+    
       </div>
        
       <div className="blob"></div>
