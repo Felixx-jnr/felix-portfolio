@@ -19,37 +19,27 @@
   }
 }
 
-.card img{
-  filter: grayscale(100%);
-}
-
-.card img:hover{
-  filter: grayscale(0);
-}
 
 .card{
+  filter: grayscale(100%);
+  position: relative;
   margin: rem((5));
   padding: rem(10) rem(30) rem(0);
   width: rem(150);
   background: #333;
   border: 1px solid #666;
   border-radius: rem(20);
+  transform: rotateY(0deg);
+  transition: all 2s;
+
 }
 
-img{
-  transition: transform 1s ease-in-out;
+.card:hover{
+  top: rem(-10);
+  background: #eee;
+  filter: grayscale(0);
+  transform: rotateY(360deg);
 }
-
-img:hover{
-  transform:rotateY(360deg);
-}
-
-
-
-
-
-
-
 
 
 

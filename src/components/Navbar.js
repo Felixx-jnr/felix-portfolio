@@ -16,6 +16,7 @@ const Navbar = () => {
         <li>Skills</li>
         <li>Projects</li>
         <li>Contact</li>
+        
       </ul>
   
       <ul className="links icons">

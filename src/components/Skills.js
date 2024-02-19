@@ -10,13 +10,13 @@ import mongo from '../assets/mongodb.svg'
 
 const Skills = () => {
 
-
   return ( 
     <div className="skills">
 
       <h1 className='skills__header'>SKILLS</h1>
 
       <div className="skills__icon">
+
         <li className='card'><img src={html} alt="" /></li>
         <li className='card'><img src={css} alt="" /></li>
         <li className='card'><img src={js} alt="" /></li>
@@ -27,9 +27,6 @@ const Skills = () => {
         <li className='card'><img src={mongo} alt="" /></li>
     
       </div>
-       
-      <div className="blob"></div>
-      <div className="fakeblob"></div>
 
     </div>
   );
