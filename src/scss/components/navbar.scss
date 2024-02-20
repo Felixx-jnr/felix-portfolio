@@ -1,12 +1,19 @@
 @use '../util' as *;
 
 .navbar{
+  max-width: 100%;
+  background: linear-gradient(to right, #000000 1%, #7e7e7e 60%, #000000 100%);
+  color: #000;
+}
+
+.navglass{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
+  box-shadow: 0 1px 32px rgb(255, 255, 255);
 }
-
 
 header{
   display: flex;
@@ -16,6 +23,7 @@ header{
   font-weight: bold;
   padding-left: rem(10);
   text-transform: uppercase;
+  color: #999;
   
   @include breakpoint-down(medium){
     font-size: rem(30);
@@ -45,6 +53,7 @@ ul{
 .icons{
   justify-content: center;
   font-size: rem(25);
+  color: #999;
 }
 
 .icons li{

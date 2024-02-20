@@ -5,27 +5,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Navbar = () => {
   return ( 
     <nav className="navbar">
+      <div className='navglass'>
+        <div>
+          <header>felix udoh</header>
+        </div>
 
-      <div>
-        <header>felix udoh</header>
-      </div>
-
-      <ul className="links pages">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        
-      </ul>
-  
-      <ul className="links icons">
-        <li><FontAwesomeIcon icon={faGithub} /></li>
-        <li><FontAwesomeIcon icon={faXTwitter} /></li>
-        <li><FontAwesomeIcon icon={faLinkedinIn} /></li>
-        <li><FontAwesomeIcon icon={faEnvelope} /></li>
-      </ul>
+        <ul className="links pages">
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Contact</li>
+          
+        </ul>
     
+        <ul className="links icons">
+          <li><FontAwesomeIcon icon={faGithub} /></li>
+          <li><FontAwesomeIcon icon={faXTwitter} /></li>
+          <li><FontAwesomeIcon icon={faLinkedinIn} /></li>
+          <li><FontAwesomeIcon icon={faEnvelope} /></li>
+        </ul>
+      </div>
     </nav> 
   );
 }
