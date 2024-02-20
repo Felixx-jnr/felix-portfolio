@@ -8,32 +8,67 @@
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
-  //height: 160px;
 
   &__overlay{
-    width: 98%;
-    //height: 160px;
+    width: 100%;
     padding: 20px;
-    background: linear-gradient(to right, #000000 1%, #000000 60%, #000000 100%);
-    opacity: 0.7;
+    background: linear-gradient(to right, #000000 40%, #969696 70%, #000000 100%);
+    opacity: 0.9;
     -webkit-backdrop-filter:(180deg) blur(10px);
     backdrop-filter: blur(100px);
   }
 
   &__setup{
+    max-width: 70%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr;
-    gap: rem(10);
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
   }
 
   &__name{
-    transform: rotate(-90deg);
-    background: #999;
-    color: #000000;
-
+    justify-self: center;
+    align-self: center;
   }
 
+  &__contact{
+    color: #000000;
+    align-self: center;
+  }
 
+  &__links, &__contact{
+    list-style: none;
+    text-align: center;
+    font-size: rem(20);
+  }
+
+  &__links li, &__contact div{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: rem(10);
+  }
+
+  &__contact .main span{
+    margin: 0 rem(10);
+   
+  }
+
+  &__contact .icon{
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+    font-size: rem(30);
+  }
 }
 
 
+h2.footer__name{
+  margin: 0;
+  font-size: rem(30);
+}
+
+.footer__links h2, .footer__contact h2{
+  font-size: rem(30);
+  margin-bottom: rem(10);
+  margin-top: rem(0);
+}
