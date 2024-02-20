@@ -1,3 +1,5 @@
+@use '../util/' as *;
+
 .footer{
   width: 100%;
   margin: 0;
@@ -6,28 +8,32 @@
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 160px;
+  //height: 160px;
+
+  &__overlay{
+    width: 98%;
+    //height: 160px;
+    padding: 20px;
+    background: linear-gradient(to right, #000000 1%, #000000 60%, #000000 100%);
+    opacity: 0.7;
+    -webkit-backdrop-filter:(180deg) blur(10px);
+    backdrop-filter: blur(100px);
+  }
+
+  &__setup{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    gap: rem(10);
+  }
+
+  &__name{
+    transform: rotate(-90deg);
+    background: #999;
+    color: #000000;
+
+  }
+
+
 }
 
-// .new{
-//   height: 200px;
-//   width: 80%;
-//   border: 1px solid #455;
-//   padding: 20px;
-// }
 
-div.glass{
-  margin: 0;
-  padding: 0;
-}
-
-.glass{
-  width: 98%;
-  height: 160px;
-  background: linear-gradient(to right, #000000 1%, #7e7e7e 60%, #000000 100%);
-  opacity: 0.7;
-  -webkit-backdrop-filter:(180deg) blur(10px);
-  backdrop-filter: blur(100px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  
-}

@@ -31,7 +31,6 @@
   border-radius: rem(20);
   transform: rotateY(0deg);
   transition: all 2s;
-
 }
 
 .card:hover{
@@ -39,7 +38,10 @@
   background: #eee;
   filter: grayscale(0);
   transform: rotateY(360deg);
+  box-shadow: 0 1px 10px rgb(255, 255, 255);
 }
 
-
+li.card{
+  margin-top: rem(10);
+}
 
