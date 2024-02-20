@@ -11,7 +11,7 @@
 
   &__overlay{
     width: 100%;
-    padding: 20px;
+    padding: 0 20px;
     background: linear-gradient(to right, #000000 40%, #969696 70%, #000000 100%);
     opacity: 0.9;
     -webkit-backdrop-filter:(180deg) blur(10px);
@@ -19,7 +19,7 @@
   }
 
   &__setup{
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -71,4 +71,13 @@ h2.footer__name{
   font-size: rem(30);
   margin-bottom: rem(10);
   margin-top: rem(0);
+}
+
+.footer p{
+  padding: rem(10) 0;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  grid-column: 2/3;
+  border-top: #444 1px solid;
 }

@@ -11,11 +11,9 @@ const Footer = () => {
 
           <div className="footer__links">
             <h2>LINKS</h2>
-            <li>Home</li>
             <li>About</li>
             <li>Skills</li>
             <li>Projects</li>
-            <li>Contact</li>
           </div>
 
           <div className="footer__contact">
@@ -30,10 +28,12 @@ const Footer = () => {
               <div><FontAwesomeIcon icon={faXTwitter}/></div>
               <div><FontAwesomeIcon icon={faFacebook}/></div>
             </div>
+
           </div>
         </div>
+        <p>2024 &copy; copyright. All rights reserved</p>
       </div>
-
+      
     </div>
 
    );
