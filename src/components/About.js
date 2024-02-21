@@ -2,7 +2,7 @@ import robo from '../assets/robo.png'
 
 const About = () => {
   return ( 
-    <div className="about">
+    <div className="about" id='about'>
 
       <h1 className='about__header'>ABOUT</h1>
 

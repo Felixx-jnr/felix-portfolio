@@ -14,10 +14,11 @@
   &__image{
     width: 40%;
     transition: all 1s;
+    opacity: 50%;
   }
 
   &__image:hover{
-    opacity: 50%;
+    opacity: 100%;
   }
 }
 
@@ -28,10 +29,10 @@ img{
 .home div p{
   margin: 0;
   transition: all 0.5s;
-}
-
-.home div p:hover{
-  color: red;
+  background: -webkit-linear-gradient(#1bafd0, #fd636b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home div p:nth-child(1){

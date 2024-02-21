@@ -11,7 +11,7 @@ import mongo from '../assets/mongodb.svg'
 const Skills = () => {
 
   return ( 
-    <div className="skills">
+    <div className="skills" id='skills'>
 
       <h1 className='skills__header'>SKILLS</h1>
 

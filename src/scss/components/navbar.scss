@@ -4,6 +4,10 @@
   max-width: 100%;
   background: linear-gradient(to right, #000000 1%, #7e7e7e 60%, #000000 100%);
   color: #000;
+  position: fixed;
+  margin-bottom: 50px;
+  z-index: 1;
+  
 }
 
 .navglass{
@@ -13,6 +17,7 @@
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
   box-shadow: 0 1px 15px rgb(255, 255, 255);
+  
 }
 
 header{
@@ -37,6 +42,7 @@ header{
 ul{
   display: flex;
   list-style: none;
+  margin: rem(12);
 }
 
 .pages{
@@ -46,7 +52,7 @@ ul{
 
 .pages li{
   padding: rem(5) rem(15);
-  font-size: rem(25);
+  font-size: rem(20);
   font-weight: 800;
 }
 
