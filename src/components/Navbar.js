@@ -13,11 +13,11 @@ const Navbar = () => {
         </div>
 
         <ul className="links pages">
-          <AnchorLink href="#home"><li>Home</li></AnchorLink>
-          <AnchorLink href="#about"><li>About</li></AnchorLink>
-          <AnchorLink href="#skills"><li>Skills</li></AnchorLink>
+          <li><AnchorLink href="#home">Home</AnchorLink></li>
+          <li><AnchorLink href="#about">About</AnchorLink></li>
+          <li><AnchorLink href="#skills">Skills</AnchorLink></li>
           {/* <AnchorLink href="#projects"><li>Projects</li></AnchorLink> */}
-          <AnchorLink href="#contact"><li>Contact</li></AnchorLink>
+          <li><AnchorLink href="#contact">Contact</AnchorLink></li>
         </ul>
     
         <ul className="links icons">
@@ -29,7 +29,9 @@ const Navbar = () => {
 
         </ul>
       </div>
+      <div className="space"></div>
     </nav> 
+    
   );
 }
  

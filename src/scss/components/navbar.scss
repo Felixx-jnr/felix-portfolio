@@ -2,22 +2,21 @@
 
 .navbar{
   max-width: 100%;
-  background: linear-gradient(to right, #000000 1%, #7e7e7e 60%, #000000 100%);
   color: #000;
-  position: fixed;
-  margin-bottom: 50px;
-  z-index: 1;
-  
+  background: linear-gradient(to right, #000000 1%, #7e7e7e 60%, #000000 100%);
+  z-index: 2;
 }
+
 
 .navglass{
   display: grid;
+  position: fixed;
+  top: 0px;
   grid-template-columns: 1fr 3fr 1fr;
   align-items: center;
+  background: linear-gradient(to right, #000000 1%, #7e7e7e 60%, #000000 100%);
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
-  box-shadow: 0 1px 15px rgb(255, 255, 255);
-  
 }
 
 header{
@@ -54,6 +53,11 @@ ul{
   padding: rem(5) rem(15);
   font-size: rem(20);
   font-weight: 800;
+  
+}
+.pages li a{
+  color: #000;
+  
 }
 
 .icons{

@@ -4,21 +4,14 @@
   display:flex;
   align-items: center;
   justify-content: center;
-  margin-top: rem(20);
-  
+
   &__description{
     font-size: rem(45);
     font-weight: bolder;
   }
 
   &__image{
-    width: 40%;
-    transition: all 1s;
-    opacity: 50%;
-  }
-
-  &__image:hover{
-    opacity: 100%;
+    width: 30%;
   }
 }
 
