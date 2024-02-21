@@ -16,7 +16,7 @@ const Navbar = () => {
           <li><AnchorLink href="#home">Home</AnchorLink></li>
           <li><AnchorLink href="#about">About</AnchorLink></li>
           <li><AnchorLink href="#skills">Skills</AnchorLink></li>
-          {/* <AnchorLink href="#projects"><li>Projects</li></AnchorLink> */}
+          <li><AnchorLink href="">Projects</AnchorLink></li>
           <li><AnchorLink href="#contact">Contact</AnchorLink></li>
         </ul>
     

@@ -19,11 +19,16 @@ const Contact = () => {
         <div className="contact__info--writeup">
           <h2>Contact Details ! ! !</h2>
           
+          
           <div className='contact__info--logos'>
-            <div><FontAwesomeIcon icon={faEnvelope}/><span>Uyuoukoh@gmail.com</span></div>
-            <div><FontAwesomeIcon icon={faGithub}/><span>Felix_jnr</span></div>
-            <div><FontAwesomeIcon icon={faXTwitter}/><span>Felix_jnr</span></div>
-            <div><FontAwesomeIcon icon={faFacebook}/><span>Felix Udoh</span></div>
+            <div><a href="mailto:uyuoukoh@gmail.com?subject=Let's%20Work&body=Hey%2C%20Good%20day%2C%20My%20name%20is..." target='blank'><FontAwesomeIcon icon={faEnvelope}/><span>Uyuoukoh@gmail.com</span></a></div>
+
+            <div><a href="https://github.com/Felixx-jnr" target='blank'><FontAwesomeIcon icon={faGithub}/><span>Felix_jnr</span></a></div>
+
+            <div><a href="https://x.com/Felixx_jnr?t=ViRhuKymNfmS_2pyCgv_cw&s=09" target='blank'><FontAwesomeIcon icon={faXTwitter}/><span>Felix_jnr</span></a></div>
+
+            <div><a href="https://www.facebook.com/profile.php?id=100073334363631&mibextid=ZbWKwL" target='blank'><FontAwesomeIcon icon={faFacebook}/><span>Felix Udoh</span></a></div>
+
           </div>
 
         </div>
@@ -31,6 +36,8 @@ const Contact = () => {
       </div>
     </div>
 
+
+    
 
   );
 }

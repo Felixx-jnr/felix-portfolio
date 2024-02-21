@@ -4,7 +4,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background: url('../../assets/e.png');
+  background: url('../../assets/footeredit.png');
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,6 +40,7 @@
     list-style: none;
     text-align: center;
     font-size: rem(20);
+    
   }
 
   &__links li, &__contact div{
@@ -61,6 +62,9 @@
   }
 }
 
+.icon a, .main a{
+  color: #000000;
+}
 
 h2.footer__name{
   margin: 0;
@@ -71,6 +75,10 @@ h2.footer__name{
   font-size: rem(30);
   margin-bottom: rem(10);
   margin-top: rem(0);
+}
+
+.footer__links a{
+  color: #969696;
 }
 
 .footer p{

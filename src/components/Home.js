@@ -1,4 +1,4 @@
-import me from '../assets/e.png'
+import me from '../assets/be2rem.png'
 
 const Home = () => {
   return ( 

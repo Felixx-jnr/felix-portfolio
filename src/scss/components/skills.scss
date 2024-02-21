@@ -23,6 +23,7 @@
 .card{
   filter: grayscale(100%);
   position: relative;
+  z-index: 0;
   margin: rem((5));
   padding: rem(10) rem(30) rem(0);
   width: rem(150);
