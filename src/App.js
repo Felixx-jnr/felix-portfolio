@@ -12,20 +12,20 @@ import Dropdown from "./components/Dropdown"
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
 
-      <div className="container">
-        <Home/>
+      <div className="con">
+        {/* <Home/>
         <About/>
         <Skills/>
-        <Contact/>
+        <Contact/> */}
         <Dropdown/>
         
         
         
       </div>
 
-      <Footer/>
+      {/* <Footer/> */}
 
     </div>
 
