@@ -9,31 +9,41 @@
     margin-bottom: rem(0);
   }
 
+  &__intro{
+
+  }
+
   &__info{
     display: grid;
-    grid-template-columns: 1fr 0.7fr;
-    gap: rem(10);
-    align-items: center;
-    justify-items: center;
-
-    &--image{
-      width: 60%;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows:rem(350) rem(350) ;
+    gap: rem(30);
+    width: 80%;
+    margin: rem(50) auto;
+    
+    
+    &--body{
+      background: url(../../assets/be2rem.png);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: rem(20);
+      justify-items: center;
+      align-items: center;
+      border: 1px solid #999;
+      padding: rem(20);
       
     }
 
-    &--writeup{
-      padding: rem(30);
-      text-align: justify;
-    }
 
-    &--writeup h2{
-      margin: 0;
-      font-size: rem(40);
-    }
-
-    &--writeup p{
-      margin: 0;
-      font-size: rem(25);
+    &--glass{
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(225, 225, 255, 0.1), rgba(255, 255, 255, 0.18));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: rem(21);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       
     }
   }

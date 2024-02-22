@@ -5,6 +5,7 @@ html{
   font-size: 100%;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 *, *::before, *::after{
@@ -12,20 +13,9 @@ html{
 }
 
 body{
-  
-  position: relative;
   margin-top: rem(110);
   padding: rem(0);
   font-family: var(--dosis);
   background: #000;
   color: #999;
-}
-
-.visually-hidden{
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
 }

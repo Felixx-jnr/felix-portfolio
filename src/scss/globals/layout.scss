@@ -4,6 +4,7 @@
   overflow: hidden;
   max-width: rem(1450);
   margin: 0 auto;
+  padding:0;
 
 
   @include breakpoint(large){

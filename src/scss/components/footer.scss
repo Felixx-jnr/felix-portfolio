@@ -11,6 +11,7 @@
 
   &__overlay{
     width: 100%;
+    margin: 0;
     padding: 0 20px;
     background: linear-gradient(to right, #000000 40%, #969696 70%, #000000 100%);
     opacity: 0.9;
@@ -59,6 +60,7 @@
     justify-content: center;
     gap: rem(20);
     font-size: rem(30);
+   margin: 0;
   }
 }
 
