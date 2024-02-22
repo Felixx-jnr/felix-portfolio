@@ -4,28 +4,22 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Skills from './components/Skills'
 import Footer from "./components/Footer";
-import Dropdown from "./components/Dropdown"
-
-
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Navbar/> */}
+      <Navbar/>
 
-      <div className="con">
-        {/* <Home/>
+      <div className="container">
+        <Home/>
         <About/>
         <Skills/>
-        <Contact/> */}
-        <Dropdown/>
-        
-        
+        <Contact/>
         
       </div>
 
-      {/* <Footer/> */}
+      <Footer/>
 
     </div>
 
