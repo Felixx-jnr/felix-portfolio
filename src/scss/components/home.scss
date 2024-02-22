@@ -10,13 +10,9 @@
     font-weight: bolder;
   }
 
-  &__image{
-    width: 30%;
+  &__image img{
+    width: rem(200)
   }
-}
-
-img{
-  width: 100%;
 }
 
 .home div p{

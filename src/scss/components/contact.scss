@@ -16,8 +16,8 @@
     align-items: center;
 
     &--image{
-      justify-self: right;
-      width: 80%;
+      justify-self: center;
+    
     }
 
     &--writeup{
@@ -46,6 +46,10 @@
   }
 }
 
-.contact a {
-  color: #999;
+// .contact a {
+//   color: #999;
+// }
+
+#root > div > div.container > div.contact > div > div.contact__info--image > svg{
+  font-size:rem(200) ;
 }

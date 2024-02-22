@@ -1,6 +1,7 @@
-import robo2 from '../assets/robo2.png'
+
 import { faGithub, faXTwitter, faFacebook} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Contact = () => {
@@ -13,7 +14,8 @@ const Contact = () => {
       <div className='contact__info'>
 
         <div className="contact__info--image">
-          <img src={robo2} alt="about felix udoh" />
+          <FontAwesomeIcon icon={faPhoneVolume}/>
+          
         </div>
 
         <div className="contact__info--writeup">
