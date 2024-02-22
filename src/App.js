@@ -4,6 +4,9 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Skills from './components/Skills'
 import Footer from "./components/Footer";
+import Dropdown from "./components/Dropdown"
+
+
 
 
 function App() {
@@ -16,6 +19,10 @@ function App() {
         <About/>
         <Skills/>
         <Contact/>
+        <Dropdown/>
+        
+        
+        
       </div>
 
       <Footer/>

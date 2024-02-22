@@ -5,20 +5,22 @@
   align-items: center;
   justify-content: center;
 
+
   &__description{
     font-size: rem(45);
     font-weight: bolder;
   }
 
   &__image img{
-    width: rem(200)
+    justify-self: end;
+    width: 100%;
   }
 }
 
 .home div p{
   margin: 0;
   transition: all 0.5s;
-  background: -webkit-linear-gradient(#1bafd0, #fd636b);
+  background: -webkit-linear-gradient(#1bafd0, #000000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
