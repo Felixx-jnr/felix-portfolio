@@ -28,8 +28,19 @@
     gap: rem(30);
     width: 95%;
     margin: rem(50) auto;
+
+    @include breakpoint-down(medium){
+      gap: rem(10);
+      width: 98%;
+    }
+
+    @include breakpoint-down(small){
+      display: grid;
+      grid-template-columns: 1fr;
+    }
     
     &--body{
+
       background: url(../../assets/be2rem.png);
       background-size: 100%;
       background-position: center;
@@ -37,6 +48,10 @@
       border-radius: rem(20);
       border: 1px solid #999;
       padding: rem(20);
+
+      @include breakpoint-down(medium){
+        padding: rem(5);
+      }
     }
 
     &--glass{
@@ -51,6 +66,10 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include breakpoint-down(medium){
+        padding: rem(5);
+      }
 
       & h3{
         font-size: rem(24);
@@ -88,3 +107,4 @@
   text-align: justify;
   font-weight: 600;
 }
+

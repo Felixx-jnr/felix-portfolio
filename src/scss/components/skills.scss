@@ -12,11 +12,12 @@
   &__icon{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     font-size: rem(50);
     list-style: none;
     padding: rem(10);
   }
+  
 }
 
 
@@ -30,6 +31,9 @@
   border: 1px solid #666;
   border-radius: rem(20);
   transition: all 2s;
+
+
+
 }
 
 .card:hover{

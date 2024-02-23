@@ -1,20 +1,34 @@
 @use '../util/' as *;
 
 .home{
-  display:flex;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
+  justify-items: start;
+  gap: rem(20);
+
 
 
   &__description{
     font-size: rem(45);
     font-weight: bolder;
+
+    // @include breakpoint-down(medium){
+    //   font-size: rem(40);
+    // }
+
+    // @include breakpoint-down(small){
+    //  font-size: rem(1);
+    // }
+
   }
 
-  &__image img{
-    justify-self: end;
+  &__image{
     width: 100%;
+    text-align: right;
+
   }
+
 }
 
 .home div p{
@@ -24,6 +38,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 
 .home div p:nth-child(1){
@@ -36,4 +51,10 @@
 
 .home div p:nth-child(3){
   letter-spacing: rem(13);
+}
+
+img{
+  @include breakpoint-down(small){
+    width: 80%;
+  }
 }

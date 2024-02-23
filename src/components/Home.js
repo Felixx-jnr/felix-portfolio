@@ -7,8 +7,9 @@ const Home = () => {
         <img src={me} alt="Felix Udoh frontend developer react-engineer"/>
       </div>
 
+
       <div className='home__description'>
-         <p>CREATIVE</p><p>FRONTEND</p><p>DEVELOPER</p>
+        <p>CREATIVE</p><p>FRONTEND</p><p>DEVELOPER</p>
       </div>
     </div>
    );
