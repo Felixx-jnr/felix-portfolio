@@ -6,8 +6,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { FaBars, FaTimes } from 'react-icons/fa';
 
- 
-
 
 function Navbar() {
 	const navRef = useRef();
@@ -18,9 +16,9 @@ function Navbar() {
 
 	return (
 		<header>
-			<h3>FELIX UDOH</h3>
+      <h3>FELIX UDOH</h3>
 			<nav ref={navRef}>
-
+        
         <div>
           <ul className="links pages">
             <li><AnchorLink href="#home">Home</AnchorLink></li>
@@ -40,18 +38,18 @@ function Navbar() {
             {/* <a href="https://www.facebook.com/profile.php?id=100073334363631&mibextid=ZbWKwL" target='blank'> <li><FontAwesomeIcon icon={faFacebook} /></li></a> */}
           </ul>
        </div>
-				
-        <div className='btn'>
-          <button className="nav-btn nav-close-btn times" onClick={showNavbar}>
-            <FaTimes/>
-          </button>
 
-          <button className="nav-btn bars" onClick={showNavbar}>
-            <FaBars/>
-          </button>
-        </div>
+       <button className="nav-btn nav-close-btn times" onClick={showNavbar}>
+          <FaTimes/>
+        </button>
+				
+
 
 			</nav>
+
+      <button className="nav-btn bars" onClick={showNavbar}>
+        <FaBars/>
+      </button>
 			
 		</header>
 	);
