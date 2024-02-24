@@ -7,26 +7,23 @@
   justify-items: start;
   gap: rem(20);
 
-
-
   &__description{
     font-size: rem(45);
     font-weight: bolder;
 
-    // @include breakpoint-down(medium){
-    //   font-size: rem(40);
-    // }
+    @include breakpoint-down(medium){
+      font-size: rem(40);
+    }
 
-    // @include breakpoint-down(small){
-    //  font-size: rem(1);
-    // }
+    @include breakpoint-down(small){
+     font-size: rem(25);
+    }
 
   }
 
   &__image{
-    width: 100%;
+    width: 110%;
     text-align: right;
-
   }
 
 }
@@ -55,6 +52,12 @@
 
 img{
   @include breakpoint-down(small){
+    width: 80%;
+  }
+}
+
+.home img{
+  @include breakpoint-down(medium){
     width: 80%;
   }
 }

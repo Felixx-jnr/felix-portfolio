@@ -1,3 +1,4 @@
+import phone from '../assets/phone-call-svgrepo-com.svg'
 
 import { faGithub, faXTwitter, faFacebook} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -13,15 +14,15 @@ const Contact = () => {
 
       <div className='contact__info'>
 
-        <div className="contact__info--image">
-          <FontAwesomeIcon icon={faPhoneVolume}/>
-          
-        </div>
+        {/* <div className="contact__info--image">
+          <img src={phone} alt="" />
+        </div> */}
+
+        <img className="contact__info--image" src={phone} alt="" />    
 
         <div className="contact__info--writeup">
           <h2>Contact Details ! ! !</h2>
-          
-          
+  
           <div className='contact__info--logos'>
             <div><a href="mailto:uyuoukoh@gmail.com?subject=Let's%20Work&body=Hey%2C%20Good%20day%2C%20My%20name%20is..." target='blank'><FontAwesomeIcon icon={faEnvelope}/><span>Uyuoukoh@gmail.com</span></a></div>
 

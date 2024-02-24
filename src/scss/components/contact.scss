@@ -8,7 +8,11 @@
     padding-top: rem(80);
     margin-bottom: rem(30);
 
-   
+    @include breakpoint-down(small){
+      font-size: rem(35);
+      padding-top: rem(30);
+      margin-bottom: rem(15);
+    }
   }
 
   &__info{
@@ -17,16 +21,24 @@
     gap: rem(80);
     align-items: center;
 
-
     @include breakpoint-down(small){
-      grid-template-columns: 0.7fr 1.3fr;
-      
-    }
+        gap: rem(30);
+      }
 
 
     &--image{
-      justify-self: center;
-    
+      justify-self: right;
+      width: 50%;
+      padding: 0 rem(20);
+      margin: 0 rem(20);
+
+      @include breakpoint-down(medium){
+        width: 60%;
+      }
+      @include breakpoint-down(medium){
+        width: 70%;
+      }
+
     }
 
     &--writeup{
@@ -38,29 +50,18 @@
       margin: 0;
       font-size: rem(40);
 
-      @include breakpoint-down(medium){
+      @include breakpoint-down(small){
         font-size: rem(30);
       }
-
     }
 
-    &--writeup p{
-      margin: 0;
-      font-size: rem(25);
-
-      @include breakpoint-down(medium){
-        font-size: rem(20);
-      }
-
-
-    }
 
     &--logos div{
       font-size: rem(25);
       margin: rem(20);
 
       @include breakpoint-down(small){
-        font-size: rem(25);
+        font-size: rem(20);
       }
     }
 
@@ -68,18 +69,10 @@
       margin-left: rem(20);
 
       @include breakpoint-down(medium){
-        margin-left: rem(10);
+        margin-left: rem(5);
       }
 
-     
     }
   }
 }
 
-#root > div > div.container > div.contact > div > div.contact__info--image > svg{
-  font-size:1300% ;
-
-  @include breakpoint-down(small){
-    font-size: 700%;
-  }
-}
