@@ -2,7 +2,6 @@ import phone from '../assets/phone-call-svgrepo-com.svg'
 
 import { faGithub, faXTwitter, faFacebook} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Contact = () => {
@@ -13,10 +12,6 @@ const Contact = () => {
       className='contact__header'>CONTACT</h1>
 
       <div className='contact__info'>
-
-        {/* <div className="contact__info--image">
-          <img src={phone} alt="" />
-        </div> */}
 
         <img className="contact__info--image" src={phone} alt="" />    
 
@@ -38,9 +33,6 @@ const Contact = () => {
       
       </div>
     </div>
-
-
-    
 
   );
 }

@@ -1,25 +1,41 @@
 import { faGithub, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 function Navbar() {
-	const navRef = useRef();
 
-	const showNavbar = () => {
-		navRef.current.classList.toggle("responsive_nav");
-	};
+  useEffect(() => {
+    function handleClick(event) {
+      if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'LI') {
+        event.preventDefault();
+        setOpen(false);
+        const targetId = event.target.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    document.querySelector('.links.pages').addEventListener('click', handleClick);
+
+    return () => {
+      document.querySelector('.links.pages').removeEventListener('click', handleClick);
+    };
+  }, []);
+	
+
+	const [open, setOpen] = useState(false);
+  let navRef = useRef();
 
 	return (
 		<header>
       <h3>FELIX UDOH</h3>
-			<nav ref={navRef}>
+			<nav ref={navRef} className={`nav ${open? 'responsive_nav': ''}`} onClick={()=>{setOpen(false)}}>
         
-        <div>
+        <div >
           <ul className="links pages">
             <li><AnchorLink href="#home">Home</AnchorLink></li>
             <li><AnchorLink href="#about">About</AnchorLink></li>
@@ -35,19 +51,16 @@ function Navbar() {
             <a href="https://github.com/Felixx-jnr" target='blank'> <li><FontAwesomeIcon icon={faGithub} /></li></a>
             <a href="https://x.com/Felixx_jnr?t=ViRhuKymNfmS_2pyCgv_cw&s=09" target='blank'> <li><FontAwesomeIcon icon={faXTwitter} /></li></a>
             <a href="https://www.linkedin.com/in/uyuoukoh-udoh-305a782b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='blank'> <li><FontAwesomeIcon icon={faLinkedinIn} /></li></a>
-            {/* <a href="https://www.facebook.com/profile.php?id=100073334363631&mibextid=ZbWKwL" target='blank'> <li><FontAwesomeIcon icon={faFacebook} /></li></a> */}
           </ul>
        </div>
 
-       <button className="nav-btn nav-close-btn times" onClick={showNavbar}>
+       <button className="nav-btn nav-close-btn times"onClick={()=>{setOpen(!open)}}>
           <FaTimes/>
         </button>
 				
-
-
 			</nav>
 
-      <button className="nav-btn bars" onClick={showNavbar}>
+      <button className="nav-btn bars" onClick={()=>{setOpen(!open)}}>
         <FaBars/>
       </button>
 			

@@ -5,12 +5,12 @@
   &__header{
     font-size: rem(40);
     text-align: center;
-    padding-top: rem(80);
+    padding-top: rem(60);
     margin-bottom: rem(30);
 
     @include breakpoint-down(small){
       font-size: rem(30);
-      padding-top: rem(30);
+      padding-top: rem(45);
       margin-bottom: rem(15);
     }
   }
