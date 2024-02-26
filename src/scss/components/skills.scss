@@ -9,7 +9,7 @@
     margin-bottom: rem(30);
 
     @include breakpoint-down(small){
-      font-size: rem(35);
+      font-size: rem(30);
       padding-top: rem(30);
       margin-bottom: rem(15);
     }
@@ -37,6 +37,10 @@
   border: 1px solid #666;
   border-radius: rem(20);
   transition: all 2s;
+
+  @include breakpoint-down(small){
+    padding: rem(5) rem(10);
+  }
 
 
 

@@ -9,7 +9,7 @@
     margin-bottom: rem(30);
 
     @include breakpoint-down(small){
-      font-size: rem(35);
+      font-size: rem(30);
       padding-top: rem(30);
       margin-bottom: rem(15);
     }
@@ -22,7 +22,12 @@
     align-items: center;
 
     @include breakpoint-down(small){
-        gap: rem(30);
+        gap: rem(10);
+        grid-template-columns: 0.7fr 1fr;
+
+        @include breakpoint-down(smaller){
+          display: block;
+        }
       }
 
 
@@ -33,17 +38,29 @@
       margin: 0 rem(20);
 
       @include breakpoint-down(medium){
+        padding: 0;
+        padding-right: rem(10);
+        margin: 0;
+        width: 70%;
+      }
+
+      @include breakpoint-down(small){
         width: 60%;
       }
-      @include breakpoint-down(medium){
-        width: 70%;
+
+      @include breakpoint-down(smaller){
+        display: none;
       }
 
     }
 
     &--writeup{
-      padding: rem(30) 0;
       text-align: left;
+
+      @include breakpoint-down(smaller){
+        max-width: 100%;
+        margin:  0 auto ;
+      }
     }
 
     &--writeup h2{
@@ -51,7 +68,11 @@
       font-size: rem(40);
 
       @include breakpoint-down(small){
-        font-size: rem(30);
+        font-size: rem(28);
+      }
+
+      @include breakpoint-down(smaller){
+        text-align: center;
       }
     }
 
@@ -61,7 +82,11 @@
       margin: rem(20);
 
       @include breakpoint-down(small){
-        font-size: rem(20);
+        font-size: rem(18);
+      }
+
+      @include breakpoint-down(smaller){
+        padding-left: rem(10);
       }
     }
 
@@ -70,6 +95,8 @@
 
       @include breakpoint-down(medium){
         margin-left: rem(5);
+
+
       }
 
     }

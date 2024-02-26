@@ -8,7 +8,7 @@
     padding-top: rem(80);
 
     @include breakpoint-down(small){
-      font-size: rem(35);
+      font-size: rem(30);
       padding-top: rem(30);
       margin-bottom: rem(15);
     }
@@ -25,6 +25,11 @@
       font-size: rem(24);
       text-align: justify;
       font-weight: 600;
+
+      @include breakpoint-down(small){
+        font-size: rem(22);
+        padding: 0 rem(15);
+      }
     }
   }
 
@@ -107,8 +112,7 @@
 }
 
 .connect p{
-  margin-left: 0 auto;
-  padding: 0 rem(30);
+  padding: 0 rem(26);
   font-size: rem(24);
   text-align: justify;
   font-weight: 600;

@@ -16,7 +16,8 @@
     }
 
     @include breakpoint-down(small){
-     font-size: rem(25);
+      gap: rem(10);
+      font-size: rem(35);
     }
 
   }
@@ -48,16 +49,31 @@
 
 .home div p:nth-child(3){
   letter-spacing: rem(13);
+
+  @include breakpoint-down(small){
+    letter-spacing: rem(10);
+  }
 }
 
 img{
   @include breakpoint-down(small){
-    width: 80%;
+   // width: 80%;
   }
 }
 
 .home img{
   @include breakpoint-down(medium){
     width: 80%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .home{
+    gap: rem(5)
+  }
+  
+  .home__description{
+    font-size:130%;
   }
 }
