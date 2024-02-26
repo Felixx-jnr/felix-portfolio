@@ -97,6 +97,41 @@ nav{
 		top: 1px;
 	}
 
+	.pages{
+		display: block;
+		text-align: center;
+	}
+
+	.pages li{
+		font-size: rem(40);
+
+		@include breakpoint-down('small'){
+			font-size: rem(25);
+		}
+	}
+
+	.icons{
+		display: inline-flex;
+		width: 100%;
+		gap: rem(10);
+		
+	}
+
+	.icons li{
+		font-size: rem(40);
+
+		@include breakpoint-down('small'){
+			font-size: rem(25);
+		}
+	}
+
+
+	.times{
+		position: absolute;
+		top: rem(2);
+		right: rem(2);
+	}
+
 	header h3{
 		display: inline-flex;
 		flex-wrap: nowrap;
