@@ -1,7 +1,8 @@
-import phone from '../assets/phone-call-svgrepo-com.svg'
+// import phone from '../assets/phone-call-svgrepo-com.svg'
 
 import { faGithub, faXTwitter, faFacebook} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Contact = () => {
@@ -13,7 +14,9 @@ const Contact = () => {
 
       <div className='contact__info'>
 
-        <img className="contact__info--image" src={phone} alt="" />    
+        <FontAwesomeIcon className="contact__info--image" icon = {faPhoneVolume}/>
+
+        {/* <img className="contact__info--image" src={phone} alt="" />     */}
 
         <div className="contact__info--writeup">
           <h2>Contact Details ! ! !</h2>
@@ -33,7 +36,6 @@ const Contact = () => {
       
       </div>
     </div>
-
   );
 }
  

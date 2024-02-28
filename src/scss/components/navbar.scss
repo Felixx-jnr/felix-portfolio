@@ -50,7 +50,7 @@ nav{
 }
 
 .pages li{
-	padding: rem(5) rem(15);
+	padding: rem(5) rem(20);
 	margin: 0 rem(22);
 }
 
@@ -161,7 +161,7 @@ nav{
 		justify-content: center;
 		gap: 1.5rem;
 		background: linear-gradient(135deg, rgb(0, 0, 0), rgb(65, 65, 65));
-		transition: 1s;
+		transition: transform 1s;
 	}
 
 
