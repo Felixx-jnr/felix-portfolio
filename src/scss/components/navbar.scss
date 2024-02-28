@@ -46,12 +46,22 @@ nav{
 	justify-content: center;
 	align-items: center;
 	width: 61vw;
-
 }
 
 .pages li{
-	padding: rem(5) rem(20);
-	margin: 0 rem(22);
+	padding: rem(3) rem(15);
+	margin: 0 rem(25);
+}
+
+.pages li:nth-child(5){
+	border: solid 1px #999;
+	border-radius: rem(20);
+	color: #000;
+	background-color: #999;
+}
+
+.pages li:nth-child(5) > a{
+	color: #000;
 }
 
 .icons{
@@ -100,10 +110,12 @@ nav{
 	.pages{
 		display: block;
 		text-align: center;
+
 	}
 
 	.pages li{
 		font-size: rem(40);
+		margin: rem(10) 0;
 
 		@include breakpoint-down('medium'){
 			font-size: rem(30);
@@ -170,7 +182,9 @@ nav{
 		z-index: 1;
 	}
 
-	
-	
+	.pages li:nth-child(5){
+		display: inline-block;
+		border-radius: rem(30);
+	}
 
 }
