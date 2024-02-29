@@ -16,14 +16,19 @@
   }
 
   &__icon{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    row-gap: rem(10);
     justify-content: center;
+    justify-items: center;
     font-size: rem(50);
     list-style: none;
     padding: rem(10);
+
+    @include breakpoint-down(medium){
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
-  
 }
 
 
@@ -38,10 +43,6 @@
   border-radius: rem(20);
   transition: all 2s;
 
-  @include breakpoint-down(small){
-    padding: rem(5) rem(10);
-  }
-
 }
 
 .card:hover{
@@ -54,6 +55,29 @@
 
 
 li.card img{
-  width: rem(60)
+  width: rem(60);
+}
+
+li.card{
+  width: rem(120);
+
+}
+
+@media only screen and (max-width: 540px) {
+  .skills__icon{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+ li.card{
+  width: rem(80);
+  padding: 0;
+  text-align: center;
+ }
+
+ li.card img{
+  width: rem(40);
+ }
 }
 
