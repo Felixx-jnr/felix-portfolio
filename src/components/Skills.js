@@ -7,7 +7,6 @@ import node from '../assets/node.svg'
 import express from '../assets/express.svg'
 import mongo from '../assets/mongodb.svg'
 
-
 const Skills = () => {
 
   return ( 

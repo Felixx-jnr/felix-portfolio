@@ -12,10 +12,7 @@ function Navbar() {
   useEffect(() => {
     function handleClick(event) {
       if (event.target.tagName === 'A' && event.target.parentElement.tagName === 'LI') {
-        event.preventDefault();
         setOpen(false);
-        const targetId = event.target.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
       }
     }
 
