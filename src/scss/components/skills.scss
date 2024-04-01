@@ -15,7 +15,8 @@
   }
 
   &__icon {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(9, 1fr);
     row-gap: rem(10);
     justify-content: center;
@@ -23,10 +24,6 @@
     font-size: rem(50);
     list-style: none;
     padding: rem(10);
-
-    @include breakpoint-down(medium) {
-      grid-template-columns: repeat(3, 1fr);
-    }
   }
 }
 
@@ -55,12 +52,6 @@ li.card img {
 
 li.card {
   width: rem(120);
-}
-
-@media only screen and (max-width: 540px) {
-  .skills__icon {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media only screen and (max-width: 320px) {
