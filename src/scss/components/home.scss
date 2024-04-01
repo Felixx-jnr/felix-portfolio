@@ -1,80 +1,77 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.home{
-  display:grid;
+.home {
+  display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: start;
   gap: rem(20);
   padding-top: rem(40);
 
-  &__description{
+  &__description {
     font-size: rem(45);
     font-weight: bolder;
 
-    @include breakpoint-down(medium){
+    @include breakpoint-down(medium) {
       font-size: rem(40);
     }
 
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
       gap: rem(10);
       font-size: rem(35);
     }
-
   }
 
-  &__image{
+  &__image {
     width: 110%;
     text-align: right;
+    opacity: 0.6;
   }
-
 }
 
-.home div p{
+.home div p {
   margin: 0;
   transition: all 0.5s;
   background: -webkit-linear-gradient(#1bafd0, #000000);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
-.home div p:nth-child(1){
+.home div p:nth-child(1) {
   letter-spacing: rem(5);
 }
 
-.home div p:nth-child(2){
+.home div p:nth-child(2) {
   letter-spacing: rem(8);
 }
 
-.home div p:nth-child(3){
+.home div p:nth-child(3) {
   letter-spacing: rem(13);
 
-  @include breakpoint-down(small){
+  @include breakpoint-down(small) {
     letter-spacing: rem(10);
   }
 }
 
-img{
-  @include breakpoint-down(small){
-   // width: 80%;
+img {
+  @include breakpoint-down(small) {
+    // width: 80%;
   }
 }
 
-.home img{
-  @include breakpoint-down(medium){
+.home img {
+  @include breakpoint-down(medium) {
     width: 80%;
   }
 }
 
-
 @media only screen and (max-width: 600px) {
-  .home{
-    gap: rem(5)
+  .home {
+    gap: rem(5);
   }
-  
-  .home__description{
-    font-size:130%;
+
+  .home__description {
+    font-size: 130%;
   }
 }

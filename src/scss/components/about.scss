@@ -1,62 +1,60 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.about{
-
-  &__header{
+.about {
+  &__header {
     font-size: rem(40);
     text-align: center;
-    padding-top: rem(60);
+    padding-top: rem(30);
 
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
       font-size: rem(30);
-      padding-top: rem(45);
+      padding-top: rem(20);
       margin-bottom: rem(15);
     }
   }
 
-  &__intro{
+  &__intro {
     font-size: rem(30);
     text-align: center;
     padding: 0;
 
-    &--writeup{
+    &--writeup {
       margin-left: 0 auto;
       padding: 0 rem(30);
       font-size: rem(24);
       text-align: justify;
       font-weight: 600;
 
-      @include breakpoint-down(small){
+      @include breakpoint-down(small) {
         font-size: rem(22);
         padding: 0 rem(15);
       }
 
-      @include breakpoint-down(smaller){
+      @include breakpoint-down(smaller) {
         //font-size: rem(20);
         padding: 0 rem(20);
       }
     }
   }
 
-  &__info{
+  &__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: rem(30);
     width: 95%;
     margin: rem(50) auto;
 
-    @include breakpoint-down(medium){
+    @include breakpoint-down(medium) {
       gap: rem(10);
       width: 98%;
     }
 
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
       display: grid;
       grid-template-columns: 1fr;
     }
-    
-    &--body{
 
+    &--body {
       background: url(../../assets/be2rem.png);
       background-size: 100%;
       background-position: center;
@@ -65,15 +63,19 @@
       border: 1px solid #999;
       padding: rem(20);
 
-      @include breakpoint-down(medium){
+      @include breakpoint-down(medium) {
         padding: rem(5);
       }
     }
 
-    &--glass{
+    &--glass {
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, rgba(225, 225, 255, 0.1), rgba(255, 255, 255, 0.18));
+      background: linear-gradient(
+        135deg,
+        rgba(225, 225, 255, 0.1),
+        rgba(255, 255, 255, 0.18)
+      );
       -webkit-backdrop-filter: blur(40px);
       backdrop-filter: blur(40px);
       border-radius: rem(21);
@@ -83,23 +85,23 @@
       flex-direction: column;
       justify-content: center;
 
-      @include breakpoint-down(medium){
+      @include breakpoint-down(medium) {
         padding: rem(5);
       }
 
-      & h3{
+      & h3 {
         font-size: rem(24);
         font-weight: 900;
-        color:#000;
+        color: #000;
         text-align: center;
       }
 
-      & span{
+      & span {
         color: #000;
         font-weight: 900;
       }
 
-      & p{
+      & p {
         font-size: rem(20);
         font-weight: 200;
         color: #eee;
@@ -110,16 +112,19 @@
   }
 }
 
-.connect h2{
+.connect h2 {
   font-size: rem(30);
   text-align: center;
   padding: 0;
 }
 
-.connect p{
+.connect p {
   padding: 0 rem(26);
   font-size: rem(24);
   text-align: justify;
   font-weight: 600;
 }
 
+div.about__info {
+  margin-bottom: rem(10);
+}

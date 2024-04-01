@@ -1,37 +1,35 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.contact{
-
-  &__header{
+.contact {
+  &__header {
     font-size: rem(40);
     text-align: center;
-    padding-top: rem(60);
+    padding-top: rem(30);
     margin-bottom: rem(30);
 
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
       font-size: rem(30);
-      padding-top: rem(45);
+      padding-top: rem(20);
       margin-bottom: rem(15);
     }
   }
 
-  &__info{
+  &__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: rem(80);
     align-items: center;
 
-    @include breakpoint-down(small){
-        gap: rem(10);
-        grid-template-columns: 0.7fr 1fr;
+    @include breakpoint-down(small) {
+      gap: rem(10);
+      grid-template-columns: 0.7fr 1fr;
 
-        @include breakpoint-down(smaller){
-          display: block;
-        }
+      @include breakpoint-down(smaller) {
+        display: block;
       }
+    }
 
-
-      #root > div > div.container > 
+    #root > div > div.container > 
 
     // &--image{
     //   justify-self: right;
@@ -56,74 +54,69 @@
 
     // }
 
-    &--writeup{
+    &--writeup {
       text-align: left;
 
-      @include breakpoint-down(smaller){
+      @include breakpoint-down(smaller) {
         max-width: 100%;
-        margin:  0 auto ;
+        margin: 0 auto;
       }
     }
 
-    &--writeup h2{
+    &--writeup h2 {
       margin: 0;
       font-size: rem(40);
 
-      @include breakpoint-down(small){
+      @include breakpoint-down(small) {
         font-size: rem(28);
       }
 
-      @include breakpoint-down(smaller){
+      @include breakpoint-down(smaller) {
         text-align: center;
       }
     }
 
-
-    &--logos div{
+    &--logos div {
       font-size: rem(25);
       margin: rem(20);
 
-      @include breakpoint-down(small){
+      @include breakpoint-down(small) {
         font-size: rem(18);
       }
 
-      @include breakpoint-down(smaller){
+      @include breakpoint-down(smaller) {
         padding-left: rem(10);
       }
     }
 
-    &--logos span{
+    &--logos span {
       margin-left: rem(20);
 
-      @include breakpoint-down(medium){
+      @include breakpoint-down(medium) {
         margin-left: rem(5);
-
-
       }
-
     }
   }
 }
 
-div.contact > div > svg{
+div.contact > div > svg {
   justify-self: right;
   font-size: 1400%;
   padding: 0 rem(20);
   margin: 0 rem(20);
 
-  @include breakpoint-down(medium){
+  @include breakpoint-down(medium) {
     padding: 0;
     padding-right: rem(10);
     margin: 0;
     font-size: 1000%;
   }
 
-  @include breakpoint-down(small){
+  @include breakpoint-down(small) {
     font-size: 500%;
   }
 
-  @include breakpoint-down(smaller){
+  @include breakpoint-down(smaller) {
     display: none;
   }
-
 }

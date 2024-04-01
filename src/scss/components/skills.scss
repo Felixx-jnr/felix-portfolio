@@ -1,23 +1,22 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.skills{
-  &__header{
-  
+.skills {
+  &__header {
     font-size: rem(40);
     text-align: center;
-    padding-top: rem(60);
+    padding-top: rem(30);
     margin-bottom: rem(30);
 
-    @include breakpoint-down(small){
+    @include breakpoint-down(small) {
       font-size: rem(30);
-      padding-top: rem(45);
+      padding-top: rem(20);
       margin-bottom: rem(15);
     }
   }
 
-  &__icon{
+  &__icon {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     row-gap: rem(10);
     justify-content: center;
     justify-items: center;
@@ -25,14 +24,13 @@
     list-style: none;
     padding: rem(10);
 
-    @include breakpoint-down(medium){
-      grid-template-columns: repeat(4, 1fr);
+    @include breakpoint-down(medium) {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
 
-
-.card{
+.card {
   position: relative;
   filter: grayscale(100%);
   z-index: 0;
@@ -42,42 +40,37 @@
   border: 1px solid #666;
   border-radius: rem(20);
   transition: all 2s;
-
 }
 
-.card:hover{
-  //top: rem(-10);
+.card:hover {
   background: #eee;
   filter: grayscale(0);
   transform: rotateY(360deg);
   box-shadow: 0 1px 10px rgb(255, 255, 255);
 }
 
-
-li.card img{
+li.card img {
   width: rem(60);
 }
 
-li.card{
+li.card {
   width: rem(120);
-
 }
 
 @media only screen and (max-width: 540px) {
-  .skills__icon{
+  .skills__icon {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media only screen and (max-width: 320px) {
- li.card{
-  width: rem(80);
-  padding: 0;
-  text-align: center;
- }
+  li.card {
+    width: rem(80);
+    padding: 0;
+    text-align: center;
+  }
 
- li.card img{
-  width: rem(40);
- }
+  li.card img {
+    width: rem(40);
+  }
 }
-
