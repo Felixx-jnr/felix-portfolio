@@ -5,7 +5,7 @@
     font-size: rem(40);
     text-align: center;
     padding-top: rem(30);
-    margin-bottom: rem(30);
+    margin-bottom: rem(5);
 
     @include breakpoint-down(small) {
       font-size: rem(30);
