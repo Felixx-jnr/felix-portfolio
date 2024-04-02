@@ -7,9 +7,6 @@ const Project = () => {
       id="project"
     >
       <h1 className="project__header">PROJECTS</h1>
-      <h2 className="project__intro">
-        Some of the amazing proects I have worked on
-      </h2>
 
       <div className="project__container">
         <a

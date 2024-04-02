@@ -1,7 +1,9 @@
 @use "../util/" as *;
 
 .project {
-  padding: rem(10) 0;
+  max-width: 98%;
+  margin: 0 auto;
+  padding: rem(10);
 
   &__header {
     font-size: rem(40);
@@ -15,16 +17,11 @@
     }
   }
 
-  &__intro {
-    font-size: rem(30);
-    text-align: center;
-    padding: 0;
-  }
-
   &__container {
     display: flex;
-    margin: 0 20px;
+    gap: rem(20);
     text-align: justify;
+    max-width: 100%;
 
     &--image img {
       width: 100%;
@@ -38,22 +35,15 @@ button {
   padding: rem(10) rem(20);
   display: flex;
   margin-left: auto;
+  font-weight: bold;
 }
 
-// &__container {
-//   display: inline-block;
-//   max-width: 45%;
-//   margin: 0 auto;
+@media only screen and (max-width: 760px) {
+  .project__container {
+    display: block;
+  }
 
-//   &--box {
-//     display: inline-block;
-//     max-width: 45%;
-//     margin: 0 rem(10);
-//   }
-
-//   &--image img {
-//     width: 100%;
-//     height: rem(400);
-//     object-fit: cover;
-//   }
-// }
+  .project__container--image {
+    margin-bottom: 30px;
+  }
+}
