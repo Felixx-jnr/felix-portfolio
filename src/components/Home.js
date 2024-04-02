@@ -1,4 +1,4 @@
-import me from "../assets/me - Copyy.png";
+import me from "../assets/pimage.png";
 
 const Home = () => {
   return (

@@ -26,6 +26,7 @@
     width: 110%;
     text-align: right;
     opacity: 0.6;
+    outline: none;
   }
 }
 
@@ -51,12 +52,6 @@
 
   @include breakpoint-down(small) {
     letter-spacing: rem(10);
-  }
-}
-
-img {
-  @include breakpoint-down(small) {
-    // width: 80%;
   }
 }
 

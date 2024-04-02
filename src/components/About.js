@@ -7,11 +7,10 @@ const About = () => {
       <h1 className="about__header">ABOUT</h1>
       <h2 className="about__intro">Welcome to Felix's Frontend Portfolio! </h2>
       <p className="about__intro--writeup">
-        I am a versatile developer with a strong focus on frontend development
-        and a solid understanding of backend technologies. Specializing in the
-        MERN stack (MongoDB, Express.js, React, Node.js), I bring a unique blend
-        of skills to the table, allowing me to create full-stack solutions that
-        are both elegant and robust.
+        I am a versatile MERN (MongoDB, Express.js, React, Node.js) stack
+        developer, focusing on frontend and backend developement, I bring a
+        wealth of knowledge to any team with my familiarity with both frontend
+        and backend work in any MERN appliction
       </p>
 
       <div className="about__info">
@@ -20,11 +19,11 @@ const About = () => {
             <div className="about__info--glass__writeup">
               <h3>WHAT I DO?</h3>
               <p>
-                I excel in crafting seamless user experiences on the frontend,
-                while also possessing the expertise to architect scalable and
-                efficient backend systems. From designing intuitive interfaces
-                to building robust APIs, I thrive on the challenge of creating
-                end-to-end solutions that empower users and drive results.
+                I create MERN app, with the best possible frontend and backend
+                computation, while paying attention to optimization, seamless
+                user experiences and responsive web apps. From designing
+                intuitive interfaces to building robust APIs, I create end to
+                end solutions that empowers users and results.
               </p>
             </div>
           </div>
@@ -35,20 +34,19 @@ const About = () => {
             <div className="about__info--glass__writeup">
               <h3>WHY WORK WITH ME?</h3>
               <p>
-                <span>FULL-STACK EXPERTISE: </span>With proficiency in both
-                frontend and backend technologies, I offer a comprehensive skill
-                set that enables me to tackle complex projects from start to
-                finish
+                <span>FULL-STACK EXPERTISE: </span>With expertise in both
+                frontend and backend technologies, I am able to tackle both
+                aspects of a MERN app and therby reducing the time needed in
+                completing a project
               </p>
               <p>
-                <span>AGILE MINDSET: </span> I am adaptable and thrive in
-                fast-paced environments, where I can iterate quickly, gather
-                feedback, and deliver high-quality solutions on time.
+                <span>AGILE: </span> I am adaptable, I can easily adjust to the
+                working conditions of any environment with my agile mindset
               </p>
               <p>
-                <span>PASSION FOR LEARNING: </span>I am deeply passionate about
-                technology and continuously seek out opportunities to expand my
-                knowledge and stay ahead of industry trends.
+                <span>PASSION FOR LEARNING: </span>I am passionate learning and
+                growing, not only technologies that I am familiar with but also
+                open to learn other technologies
               </p>
             </div>
           </div>
@@ -58,9 +56,8 @@ const About = () => {
       <div className="connect">
         <h2 className="connect">Let's Connect</h2>
         <p>
-          Whether you're looking to revamp your web presence, streamline your
-          workflows, or tackle a new challenge, I'm here to help. Let's
-          collaborate and bring your ideas to life!
+          Build or revamp your websites, I am the here for you. If you can think
+          it, then it can be done. Let's Connect!!!
         </p>
       </div>
     </div>
