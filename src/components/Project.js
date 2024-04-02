@@ -1,4 +1,5 @@
-import banner from "../assets/pic.png";
+import social from "../assets/1.mp4";
+import movies from "../assets/2.mp4";
 
 const Project = () => {
   return (
@@ -14,10 +15,19 @@ const Project = () => {
           className="project__container--box"
         >
           <div className="project__container--image">
-            <img
-              src={banner}
-              alt=""
-            />
+            <video
+              width="100%"
+              height="100%"
+              autoPlay
+              loop
+              muted
+            >
+              <source
+                src={movies}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
               excepturi repellendus ipsa dolores labore provident dolor at
@@ -32,13 +42,22 @@ const Project = () => {
 
         <a
           href="www.google.com"
-          className="project__container"
+          className="project__container--box"
         >
           <div className="project__container--image">
-            <img
-              src={banner}
-              alt=""
-            />
+            <video
+              width="100%"
+              height="100%"
+              autoPlay
+              loop
+              muted
+            >
+              <source
+                src={social}
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab
               excepturi repellendus ipsa dolores labore provident dolor at
