@@ -36,6 +36,8 @@ button {
   display: flex;
   margin-left: auto;
   font-weight: bold;
+  border-radius: 20px;
+  border: none;
 }
 
 @media only screen and (max-width: 760px) {
@@ -45,5 +47,9 @@ button {
 
   .project__container--image {
     margin-bottom: 30px;
+  }
+
+  .project__container--image:hover {
+    text-transform: none;
   }
 }
