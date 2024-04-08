@@ -1,4 +1,4 @@
-import me from "../assets/pimage.png";
+import me from "../assets/bro felix 2 (3).png";
 
 const Home = () => {
   return (
@@ -6,12 +6,10 @@ const Home = () => {
       className="home"
       id="home"
     >
-      <div className="home__image">
-        <img
-          src={me}
-          alt="Felix Udoh frontend developer react-engineer"
-        />
-      </div>
+      <img
+        src={me}
+        alt="Felix Udoh frontend developer react-engineer"
+      />
 
       <div className="home__description">
         <p>CREATIVE</p>

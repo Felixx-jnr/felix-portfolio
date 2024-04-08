@@ -41,7 +41,8 @@ const Project = () => {
         </a>
 
         <a
-          href="www.google.com"
+          href="https://felixsocials.pages.dev/"
+          target="blank"
           className="project__container--box"
         >
           <div className="project__container--media">

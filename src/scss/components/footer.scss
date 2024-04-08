@@ -1,133 +1,140 @@
-@use '../util/' as *;
+@use "../util/" as *;
 
-.footer{
+.footer {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: url('../../assets/footeredit.png');
+  background: url("../../assets/footeredit.png");
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
 
-  &__overlay{
+  &__overlay {
     width: 100%;
     margin: 0;
     padding: 0 20px;
-    background: linear-gradient(to right, #000000 40%, #969696 70%, #000000 100%);
+    background: linear-gradient(
+      to right,
+      #000000 40%,
+      #969696 70%,
+      #000000 100%
+    );
     opacity: 0.9;
-    -webkit-backdrop-filter:(180deg) blur(10px);
+    -webkit-backdrop-filter: (180deg) blur(10px);
     backdrop-filter: blur(100px);
   }
 
-  &__setup{
+  &__setup {
     max-width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
 
-    @include breakpoint-down('small'){
+    @include breakpoint-down("small") {
       max-width: 95%;
     }
 
-    @include breakpoint-down(smaller){
+    @include breakpoint-down(smaller) {
       grid-template-columns: 0.7fr 1fr 1fr;
     }
   }
 
-  &__name{
+  &__name {
     justify-self: center;
     align-self: center;
-
   }
 
-  &__contact{
+  &__contact {
     color: #000000;
     align-self: center;
   }
 
-  &__links, &__contact{
+  &__links,
+  &__contact {
     list-style: none;
     text-align: center;
     font-size: rem(20);
 
-    @include breakpoint-down('small'){
+    @include breakpoint-down("small") {
       font-size: rem(15);
     }
-    
-    @include breakpoint-down(smaller){
+
+    @include breakpoint-down(smaller) {
       font-size: rem(10);
     }
   }
 
-  &__links li, &__contact div{
+  &__links li,
+  &__contact div {
     text-align: center;
     font-weight: 800;
     margin-bottom: rem(10);
   }
 
-  &__contact .main span{
+  &__contact .main span {
     margin: 0 rem(10);
-   
   }
 
-  &__contact .icon{
+  &__contact .icon {
     display: flex;
     justify-content: center;
     gap: rem(20);
     font-size: rem(30);
     margin: 0;
 
-    @include breakpoint-down('small'){
+    @include breakpoint-down("small") {
       gap: rem(10);
       font-size: rem(25);
     }
 
-    @include breakpoint-down(smaller){
+    @include breakpoint-down(smaller) {
       font-size: rem(20);
     }
   }
 }
 
-.icon a, .main a{
+.icon a,
+.main a {
   color: #000000;
 }
 
-h2.footer__name{
+h2.footer__name {
   margin: 0;
   font-size: rem(30);
 
-  @include breakpoint-down('small'){
+  @include breakpoint-down("small") {
     font-size: 100%;
     text-align: center;
   }
 
-  @include breakpoint-down(smaller){
+  @include breakpoint-down(smaller) {
     transform: rotate(-90deg);
     padding: 0;
     font-size: rem(12);
   }
 }
 
-.footer__links h2, .footer__contact h2{
+.footer__links h2,
+.footer__contact h2 {
   font-size: rem(30);
   margin-bottom: rem(10);
   margin-top: rem(0);
 
-  @include breakpoint-down('small'){
+  @include breakpoint-down("small") {
     font-size: rem(20);
   }
 
-  @include breakpoint-down(smaller){
+  @include breakpoint-down(smaller) {
     font-size: rem(15);
   }
 }
 
-.footer__links a{
+.footer__links a {
   color: #969696;
 }
 
-.footer p{
+.footer p {
   padding: rem(10) 0;
   margin: 0;
   text-align: center;
@@ -135,9 +142,7 @@ h2.footer__name{
   grid-column: 2/3;
   border-top: #444 1px solid;
 
-  @include breakpoint-down(smaller){
+  @include breakpoint-down(smaller) {
     font-size: rem(10);
   }
 }
-
-
