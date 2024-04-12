@@ -94,6 +94,11 @@ nav {
   outline: none;
 }
 
+.margin {
+  position: relative;
+  margin: rem(200);
+}
+
 @media only screen and (max-width: 1054px) {
   .nav-btn {
     display: block;

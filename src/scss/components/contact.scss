@@ -1,6 +1,9 @@
 @use "../util/" as *;
 
 .contact {
+  border: 1px #444 solid;
+  padding: rem(10);
+
   &__header {
     font-size: rem(40);
     text-align: center;
@@ -15,7 +18,18 @@
   }
 
   &__form {
-    max-width: 70%;
+    max-width: 100%;
     margin: 0 auto;
+  }
+
+  &__form label {
+    display: block;
+  }
+
+  &__form input {
+    width: 60%;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: rem(5);
   }
 }
