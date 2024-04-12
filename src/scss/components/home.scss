@@ -4,11 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  //gap: rem(20);
   padding-top: rem(40);
 
   &__description {
-    font-size: rem(45);
+    font-size: rem(50);
     font-weight: bolder;
 
     @include breakpoint-down(medium) {
@@ -17,7 +16,11 @@
 
     @include breakpoint-down(small) {
       gap: rem(10);
-      font-size: rem(35);
+      font-size: rem(30);
+    }
+
+    @include breakpoint-down(smaller) {
+      font-size: rem(20);
     }
   }
 }
@@ -49,20 +52,14 @@
 .home img {
   width: 30%;
   opacity: 0.8;
-}
 
-.home img {
   @include breakpoint-down(medium) {
-    width: 80%;
+    width: 40%;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .home {
     gap: rem(5);
-  }
-
-  .home__description {
-    font-size: 130%;
   }
 }

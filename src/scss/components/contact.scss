@@ -14,84 +14,8 @@
     }
   }
 
-  &__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: rem(80);
-    align-items: center;
-
-    @include breakpoint-down(small) {
-      gap: rem(10);
-      grid-template-columns: 0.7fr 1fr;
-
-      @include breakpoint-down(smaller) {
-        display: block;
-      }
-    }
-
-    #root > div > div.container > &--writeup {
-      text-align: left;
-
-      @include breakpoint-down(smaller) {
-        max-width: 100%;
-        margin: 0 auto;
-      }
-    }
-
-    &--writeup h2 {
-      margin: 0;
-      font-size: rem(40);
-
-      @include breakpoint-down(small) {
-        font-size: rem(28);
-      }
-
-      @include breakpoint-down(smaller) {
-        text-align: center;
-      }
-    }
-
-    &--logos div {
-      font-size: rem(25);
-      margin: rem(20);
-
-      @include breakpoint-down(small) {
-        font-size: rem(18);
-      }
-
-      @include breakpoint-down(smaller) {
-        padding-left: rem(10);
-      }
-    }
-
-    &--logos span {
-      margin-left: rem(20);
-
-      @include breakpoint-down(medium) {
-        margin-left: rem(5);
-      }
-    }
-  }
-}
-
-div.contact > div > svg {
-  justify-self: right;
-  font-size: 1400%;
-  padding: 0 rem(20);
-  margin: 0 rem(20);
-
-  @include breakpoint-down(medium) {
-    padding: 0;
-    padding-right: rem(10);
-    margin: 0;
-    font-size: 1000%;
-  }
-
-  @include breakpoint-down(small) {
-    font-size: 500%;
-  }
-
-  @include breakpoint-down(smaller) {
-    display: none;
+  &__form {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
