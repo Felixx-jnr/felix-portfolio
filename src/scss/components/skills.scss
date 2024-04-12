@@ -4,12 +4,12 @@
   &__header {
     font-size: rem(40);
     text-align: center;
-    padding-top: rem(30);
+    padding-top: rem(40);
     margin-bottom: rem(5);
 
     @include breakpoint-down(small) {
       font-size: rem(30);
-      padding-top: rem(20);
+      padding-top: rem(35);
       margin-bottom: rem(15);
     }
   }

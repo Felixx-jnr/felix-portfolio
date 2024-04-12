@@ -8,11 +8,11 @@
   &__header {
     font-size: rem(40);
     text-align: center;
-    padding-top: rem(30);
+    padding-top: rem(40);
 
     @include breakpoint-down(small) {
       font-size: rem(30);
-      padding-top: rem(20);
+      padding-top: rem(30);
       margin-bottom: rem(15);
     }
   }
@@ -35,7 +35,7 @@
 button {
   background: #999;
   color: #000;
-  padding: rem(10) rem(20);
+  padding: rem(10) rem(10);
   display: flex;
   margin-left: auto;
   font-weight: bold;

@@ -5,9 +5,17 @@
   margin: 0;
   padding: 0;
   background: url("../../assets/footeredit.png");
-  background-size: 30%;
+  background-size: 40%;
   background-position: center;
   background-repeat: no-repeat;
+
+  @include breakpoint-down(medium) {
+    background-size: 50%;
+  }
+
+  @include breakpoint-down(small) {
+    background-size: 60%;
+  }
 
   &__overlay {
     width: 100%;

@@ -11,7 +11,8 @@ const Project = () => {
 
       <div className="project__container">
         <a
-          href="www.google.com"
+          href="https://movieshq.onrender.com/"
+          target="blank"
           className="project__container--box"
         >
           <div className="project__container--image">
