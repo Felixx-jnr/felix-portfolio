@@ -1,7 +1,7 @@
-@use '../util' as *;
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@use "../util" as *;
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 
-html{
+html {
   font-size: 100%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -9,12 +9,13 @@ html{
   overflow-x: hidden;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-
-body{
+body {
   margin: 0 auto;
   margin-top: rem(50);
   padding: rem(0);

@@ -20,7 +20,7 @@
     }
 
     @include breakpoint-down(smaller) {
-      font-size: rem(20);
+      font-size: 90%;
     }
   }
 }
