@@ -20,7 +20,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://felixportfolio-api.onrender.com",
+        "https://felixportfolio-api.onrender.com/send-email",
         formData
       );
 
