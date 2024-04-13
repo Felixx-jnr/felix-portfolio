@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const corsOption = {
-  origin: ["https://felix-portfolio.onrender.com"],
+  origin: ["https://felix-portfolio-wg48.onrender.com"],
 };
 
 app.use(cors(corsOption));
