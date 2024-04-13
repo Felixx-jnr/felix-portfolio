@@ -7,7 +7,11 @@ const dotenv = require("dotenv");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+const corsOption = {
+  origin: ["https://felix-portfolio.onrender.com"],
+};
+
+app.use(cors(corsOption));
 dotenv.config();
 
 app.use(bodyParser.json());
