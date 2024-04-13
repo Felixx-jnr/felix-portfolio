@@ -1,6 +1,3 @@
-import social from "../assets/1.mp4";
-import movies from "../assets/2.mp4";
-
 const Project = () => {
   return (
     <div
@@ -24,7 +21,7 @@ const Project = () => {
               muted
             >
               <source
-                src={movies}
+                src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026915/y5g9nahjcevsslfyvual.webm"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
@@ -55,7 +52,7 @@ const Project = () => {
               muted
             >
               <source
-                src={social}
+                src="https://res.cloudinary.com/dyf0wsiaf/video/upload/v1713026912/afcadc0qr4ac3xjmyc7c.webm"
                 type="video/mp4"
               />
               Your browser does not support the video tag.

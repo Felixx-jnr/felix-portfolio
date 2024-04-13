@@ -1,5 +1,3 @@
-import me from "../assets/bro felix 2 (3).png";
-
 const Home = () => {
   return (
     <div
@@ -7,7 +5,7 @@ const Home = () => {
       id="home"
     >
       <img
-        src={me}
+        src="https://res.cloudinary.com/dyf0wsiaf/image/upload/v1713026910/wfarhwrxmhti81j23b6s.webp"
         alt="Felix Udoh frontend developer react-engineer"
       />
 
