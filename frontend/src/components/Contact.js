@@ -20,7 +20,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "https://felix-portfolio-one.vercel.app/",
+        "https://felix-portfolio-one.vercel.app/send-email",
         formData
       );
 
