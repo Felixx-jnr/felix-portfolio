@@ -38,9 +38,11 @@ button {
   padding: rem(10) rem(10);
   display: flex;
   margin-left: auto;
-  font-weight: bold;
+
   border-radius: 20px;
   border: none;
+  text-decoration: none;
+  transition: all 2s;
 }
 
 button:hover {

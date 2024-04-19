@@ -8,7 +8,7 @@ const About = () => {
       <h2 className="about__intro">Welcome to Felix's Frontend Portfolio! </h2>
       <p className="about__intro--writeup">
         I am a versatile MERN (MongoDB, Express.js, React, Node.js) stack
-        developer, focusing on frontend and backend developement, I bring a
+        developer, focusing on both frontend and backend developement, I bring a
         wealth of knowledge to any team with my familiarity with both frontend
         and backend work in any MERN appliction
       </p>
@@ -19,11 +19,13 @@ const About = () => {
             <div className="about__info--glass__writeup">
               <h3>WHAT I DO?</h3>
               <p>
-                I create MERN app, with the best possible frontend and backend
-                computation, while paying attention to optimization, seamless
-                user experiences and responsive web apps. From designing
-                intuitive interfaces to building robust APIs, I create end to
-                end solutions that empowers users and results.
+                I create MERN applications, with the best possible frontend and
+                backend computation, while paying attention to optimization, and
+                the best user experiences and responsive web apps. From
+                designing user interfaces, intergrating APIs, database
+                management, debugging and creating of security and data
+                protection etc I create end to end solutions that empowers both
+                users and results.
               </p>
             </div>
           </div>
@@ -44,9 +46,9 @@ const About = () => {
                 working conditions of any environment with my agile mindset
               </p>
               <p>
-                <span>PASSION FOR LEARNING: </span>I am passionate learning and
-                growing, not only technologies that I am familiar with but also
-                open to learn other technologies
+                <span>PASSION FOR LEARNING: </span>I am passionate about
+                learning and growing, not only with technologies that I am
+                familiar with but also open to learning other technologies
               </p>
             </div>
           </div>
@@ -56,8 +58,8 @@ const About = () => {
       <div className="connect">
         <h2 className="connect">Let's Connect</h2>
         <p>
-          Build or revamp your websites, I am the here for you. If you can think
-          it, then it can be done. Let's Connect!!!
+          Building or editing your websites, I am the here for you. If you can
+          think it, then it can be done. Let's Connect!!!
         </p>
       </div>
     </div>
