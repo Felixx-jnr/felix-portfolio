@@ -46,11 +46,10 @@
 
     @include breakpoint-down(medium) {
       gap: rem(10);
-      width: 98%;
+      width: 94%;
     }
 
     @include breakpoint-down(small) {
-      display: grid;
       grid-template-columns: 1fr;
     }
 
