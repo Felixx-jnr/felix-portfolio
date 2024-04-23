@@ -28,11 +28,12 @@ const Project = () => {
             </video>
             <p>
               I built a MERN stack movie app with authentication, admin routes,
-              admin dashboard, JWT etc, covering both the backend and frontend.
-              It is about a 10-page project, which I worked on alone and it took
-              me about 2 to 3 weeks to complete the site. For this project I
+              admin dashboard, JWT cookie-based authentication, etc, covering
+              both the backend and frontend. It is about a 10-page project,
+              which I worked on alone and it took me about 2 to 3 weeks to
+              complete the project and deploy it on vercel. For this project, I
               mostly focused on the logic. I built this with the MERN stack and
-              used tailwind for my styling.
+              used tailwind CSS for my styling.
             </p>
             <button>View Project</button>
           </div>
@@ -60,10 +61,10 @@ const Project = () => {
             <p>
               I built a social media engagement page with a light and dark mode
               toggle. This work was inspired by the design from frontend mentor,
-              although I added a bit of my genuinity with the from card cover
-              and the flip effect on hover. This is just a single page site,
-              This project also gave me a proper understanding of the SASS
-              technology which was used for the styling.
+              although I added a bit of my styling with the front card cover and
+              the flip effect on hover. This is a single-page site, This project
+              also gave me a proper understanding of the SASS technology that
+              was used for the styling.
             </p>
             <button>View Project</button>
           </div>
