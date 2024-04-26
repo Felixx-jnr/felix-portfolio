@@ -8,7 +8,7 @@ const Project = () => {
 
       <div className="project__container">
         <a
-          href="https://movieshq.onrender.com/"
+          href="https://moviehq.vercel.app"
           target="blank"
           className="project__container--box"
         >
