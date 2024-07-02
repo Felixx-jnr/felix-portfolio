@@ -82,6 +82,10 @@ dotenv.config();
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send("Finally, it is good");
+});
+
 app.post("/send-email", (req, res) => {
   const { name, email, message } = req.body;
 
