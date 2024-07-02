@@ -5,20 +5,32 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 
 const app = express();
+dotenv.config(); // Make sure to configure dotenv before using environment variables
+
 const PORT = process.env.PORT || 3001;
 
-const corsOption = {
-  origin: "https://felix-portfolio-wg48.onrender.com",
-  origin: "https://portfolio-phi-livid-78.vercel.app",
+const allowedOrigins = [
+  "https://felix-portfolio-wg48.onrender.com",
+  "https://portfolio-phi-livid-78.vercel.app",
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
 };
 
-app.use(cors(corsOption));
-dotenv.config();
-
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.send("Yes it is good");
+  res.send("Yes, it is good");
 });
 
 app.post("/send-email", (req, res) => {
@@ -33,7 +45,7 @@ app.post("/send-email", (req, res) => {
   });
 
   const mailOptions = {
-    from: `${email}`,
+    from: email,
     to: "uyuoukoh@gmail.com",
     subject: `Message from ${name}`,
     text: `From: ${email}\n\nMy name is ${name}\n\n${message}`,
