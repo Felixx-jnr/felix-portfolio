@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 const corsOption = {
   origin: "https://felix-portfolio-wg48.onrender.com",
+  origin: "https://portfolio-phi-livid-78.vercel.app",
 };
 
 app.use(cors(corsOption));
