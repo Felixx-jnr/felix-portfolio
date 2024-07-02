@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 const allowedOrigins = [
   "https://felix-portfolio-wg48.onrender.com",
+
   "https://portfolio-phi-livid-78.vercel.app",
 ];
 
