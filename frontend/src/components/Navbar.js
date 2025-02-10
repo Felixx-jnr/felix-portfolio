@@ -27,8 +27,7 @@ const Navbar = () => {
 
     return () => {
       document
-        .querySelector(".links.pages
-        ")
+        .querySelector(".links.pages")
         .removeEventListener("click", handleClick);
     };
   }, []);
