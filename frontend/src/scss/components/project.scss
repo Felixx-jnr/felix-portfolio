@@ -1,9 +1,11 @@
 @use "../util/" as *;
 
 .project {
-  max-width: 98%;
+  
   margin: 0 auto;
   padding: rem(10);
+  background: green;
+  
 
   &__header {
     font-size: rem(40);
@@ -24,10 +26,8 @@
     text-align: justify;
     max-width: 100%;
 
-    &--media video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    &--box{
+      background: white;
     }
   }
 }
@@ -52,7 +52,8 @@ button:hover {
 
 @media only screen and (max-width: 760px) {
   .project__container {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .project__container--image {
@@ -63,3 +64,5 @@ button:hover {
 .project a:hover {
   text-decoration: none;
 }
+
+

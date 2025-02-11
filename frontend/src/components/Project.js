@@ -35,7 +35,7 @@ const Project = () => {
               mostly focused on the logic. I built this with the MERN stack and
               used tailwind CSS for my styling.
             </p>
-            <button>View Project</button>
+           
           </div>
         </a>
 
@@ -66,7 +66,7 @@ const Project = () => {
               also gave me a proper understanding of the SASS technology that
               was used for the styling.
             </p>
-            <button>View Project</button>
+            
           </div>
         </a>
       </div>
