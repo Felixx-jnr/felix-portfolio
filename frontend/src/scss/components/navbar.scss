@@ -36,9 +36,10 @@ header h3 {
 }
 
 nav {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: flex;
+  
+  
+  justify-content: space-between;
   margin: rem(12) rem(5);
   padding: 0;
 }
@@ -51,14 +52,14 @@ nav {
 }
 
 .pages {
-  justify-content: center;
+  
   align-items: center;
   width: 61vw;
 }
 
 .pages li {
   padding: rem(3) rem(15);
-  margin: 0 rem(25);
+  
 }
 
 .pages li:nth-child(5) {

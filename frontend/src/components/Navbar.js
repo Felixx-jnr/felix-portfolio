@@ -2,6 +2,7 @@ import {
   faGithub,
   faFacebook,
   faXTwitter,
+  faMedium,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -41,10 +42,11 @@ const Navbar = () => {
   const email =
     "mailto:uyuoukoh@gmail.com?subject=Lets%20Work&body=Hey%2C%20Good%20day%2C%20My%20name%20is...";
   const github = "https://github.com/Felixx-jnr";
+  const medium = "https://medium.com/@uyuoukoh";
 
   return (
     <header>
-      <h3>FELIX UDOH</h3>
+      {/* <h3>FELIX UDOH</h3> */}
       <nav
         ref={navRef}
         className={`nav ${open ? "responsive_nav" : ""}`}
@@ -54,7 +56,7 @@ const Navbar = () => {
       >
         <div>
           <ul className="links pages">
-            <li>
+            {/* <li>
               <AnchorLink href="#home">Home</AnchorLink>
             </li>
             <li>
@@ -62,12 +64,12 @@ const Navbar = () => {
             </li>
             <li>
               <AnchorLink href="#skills">Skills</AnchorLink>
-            </li>
+            </li> */}
             <li>
               <AnchorLink href="#project">Projects</AnchorLink>
             </li>
             <li>
-              <AnchorLink href="#contact">Contact</AnchorLink>
+              <AnchorLink href="#contact">Contact Me</AnchorLink>
             </li>
           </ul>
         </div>
@@ -81,6 +83,16 @@ const Navbar = () => {
               {" "}
               <li>
                 <FontAwesomeIcon icon={faEnvelope} />
+              </li>
+            </a>
+
+            <a
+              href={medium}
+              target="blank"
+            >
+              {" "}
+              <li>
+                <FontAwesomeIcon icon={faMedium} />
               </li>
             </a>
 
