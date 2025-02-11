@@ -10,9 +10,9 @@ const Home = () => {
       />
 
       <div className="home__description">
-        <p>CREATIVE</p>
-        <p>FRONTEND</p>
-        <p>DEVELOPER</p>
+        <p>Hello, I am Pete</p>
+        <p>A frontend developer specialised in React</p>
+        {/* <p>DEVELOPER</p> */}
       </div>
     </div>
   );

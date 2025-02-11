@@ -2,43 +2,43 @@
 
 .home {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: rem(40);
 
   &__description {
-    font-size: rem(50);
+    font-size: rem(30);
     font-weight: bolder;
 
-    @include breakpoint-down(medium) {
-      font-size: rem(40);
-    }
+    // @include breakpoint-down(medium) {
+    //   font-size: rem(40);
+    // }
 
-    @include breakpoint-down(small) {
-      gap: rem(10);
-      font-size: rem(30);
-    }
+    // @include breakpoint-down(small) {
+    //   gap: rem(10);
+    //   font-size: rem(30);
+    // }
 
-    @include breakpoint-down(smaller) {
-      font-size: 120%;
-    }
+    // @include breakpoint-down(smaller) {
+    //   font-size: 120%;
+    // }
   }
 }
 
 .home div p {
   margin: 0;
-  background: -webkit-linear-gradient(#1bafd0, #000000);
+  background: -webkit-linear-gradient(#1bafd0, #d45050);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.home div p:nth-child(1) {
-  letter-spacing: rem(5);
-}
+
 
 .home div p:nth-child(2) {
-  letter-spacing: rem(8);
+ 
+  font-size: 40px;
 }
 
 .home div p:nth-child(3) {
@@ -50,11 +50,15 @@
 }
 
 .home img {
-  width: 10%;
+  border: #1bafd0 1px solid;
+  border-radius: 46%;
+  margin: 10px;
+  padding: 10px;
+  width: 8%;
   opacity: 0.8;
 
   @include breakpoint-down(medium) {
-    width: 40%;
+    width: 10%;
   }
 }
 
